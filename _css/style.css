@@ -1,0 +1,9 @@
+h1#cabecalho{
+    background-color: darkcyan;
+    text-align: center;
+    color: aquamarine;
+    font-family: 'Times New Roman';
+}
+th{
+    color: darkcyan;
+}

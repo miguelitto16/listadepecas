@@ -3,32 +3,36 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Página  em construçao</title>
+    <title>Lista de peças</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    
+    <link rel='stylesheet' type='text/css' media='screen' href='_css/style.css'>
+
     <script src='pecas.js'></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Pagina em construçao</h1>
+    <h1>Lista de peças</h1>
     <div class="container">
         <label id="nome">Nome:</label>
         <input class="form-control" id="nomeUser" type="text">
+        <br>
+        <label id="precoLabel">Preço:</label>
+        <input class="form-control" id="precoInput" type="number" step="0.01">
         <br>
         <button class="btn btn-primary" type="button" onclick="salvarUser()">Salvar</button>
     </div>
     <br>
     <div>
         <table class="table table-striped" id="tabela">
-        <tr>
-            <th>Nome Usuário</th>
-            <th>Ações</th>
-        </tr>
-   </table> 
-</div>
+            <tr>
+                <th>Nome Usuário</th>
+                <th>Preço</th>
+                <th>Ações</th>
+            </tr>
+       </table> 
+       <button class="btn btn-primary" onclick="calcularTotal()">Calcular Total</button>
+       <p>Total: R$ <span id="total">0.00</span></p>
+    </div>
 </body>
 </html>
-<tr><th>Nome Usuário</th><th>Ações</th></tr>
